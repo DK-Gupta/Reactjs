@@ -17,12 +17,55 @@ import reportWebVitals from './reportWebVitals';
 
 //  +++++++++++ Rendering through component(App) ++++++++++
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+
+
+
+// function Car(){
+//   return(
+//   <>
+//   <h1>I am Car</h1>
+//   </>
+//   )
+// };
+
+// function Garage(){
+//   return(
+//     <>
+//     <h2>This is garage</h2>
+//     <Car/>
+//     </>
+//   )
+
+// }
+
+// const root = ReactDOM.createRoot(document.getElementById('root'))
+// root.render(
+//   <Garage/>
+// )
+
+// +++++++++ classes +++++++++++++
+class Bike extends React.Component {
+  constructor() {
+    super();
+    this.state= {color: "red"};
+  }
+  render(){
+    return <h2>I have a {this.state.color} Bike!</h2>
+
+  }
+  
+}
+
+const print = ReactDOM.createRoot(document.getElementById('root'));
+print.render(
+  <Bike/>
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
