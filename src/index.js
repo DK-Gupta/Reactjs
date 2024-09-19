@@ -48,7 +48,6 @@ import reportWebVitals from './reportWebVitals';
 // root.render(
 //   <Garage/>
 // )
-
 // +++++++++ classes +++++++++++++
 class Bike extends React.Component {
   constructor() {
@@ -61,11 +60,18 @@ class Bike extends React.Component {
   }
   
 }
-
+function abc(a,b){
+  return a+b;
+}
+var ab = abc(4,5);
+console.log(ab);
 const print = ReactDOM.createRoot(document.getElementById('root'));
 print.render(
   <Bike/>
 )
+
+// ++++++++++ props ++++++++++
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
